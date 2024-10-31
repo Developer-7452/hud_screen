@@ -129,8 +129,12 @@
 
 <body>
     <div class="container">
-        <h2>Developer7452 Hud_Screen</h2>
+        <h2>Developer7452 hud_screen.json</h2>
         <form id="elementForm">
+            <div class="form-group">
+                <button type="button" onclick="location.href='https://discord.gg/jcUAsfAvMY'">Discord</button>
+                <button type="button" onclick="location.href='https://www.youtube.com/@developer-7452'">YouTube</button>
+            </div>
             <div class="form-group">
                 <label for="name">Name (ej. custom_totem)</label>
                 <input type="text" id="name" required>
@@ -371,7 +375,7 @@
             const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(originalJson, null, 2));
             const downloadAnchor = document.createElement('a');
             downloadAnchor.setAttribute("href", dataStr);
-            downloadAnchor.setAttribute("download", "custom_image_blocks.json");
+            downloadAnchor.setAttribute("download", "hud_screen.json");
             document.body.appendChild(downloadAnchor);
             downloadAnchor.click();
             downloadAnchor.remove();
